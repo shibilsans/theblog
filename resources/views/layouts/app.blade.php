@@ -19,90 +19,9 @@
     </head>
     <body class="font-sans antialiased">
         <x-banner />
+        @include('layouts.parial.header')
 
-        {{-- <div class="min-h-screen bg-gray-100"> --}}
-
-            {{-- @livewire('navigation-menu')  --}}
-
-            <!-- Page Heading -->
-            {{-- @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif --}}
-            {{-- <body class="font-light antialiased"> --}}
-                <header class="flex items-center justify-between py-3 px-6 border-b border-gray-100">
-                    <div id="header-left" class="flex items-center">
-                        <div class="text-gray-800 font-semibold">
-                            <span class="text-yellow-500 text-xl">&lt;blog&gt;</span> Code
-                        </div>
-                        <div class="top-menu ml-10">
-                            <ul class="flex space-x-4">
-                                <li>
-                                    <a class="flex space-x-2 items-center hover:text-yellow-900 text-sm text-yellow-500"
-                                        href="http://127.0.0.1:8000">
-                                        Home
-                                    </a>
-                                </li>
-            
-                                <li>
-                                    <a class="flex space-x-2 items-center hover:text-yellow-500 text-sm text-gray-500"
-                                        href="http://127.0.0.1:8000/blog">
-                                        Blog
-                                    </a>
-                                </li>
-            
-                                <li>
-                                    <a class="flex space-x-2 items-center hover:text-yellow-500 text-sm text-gray-500"
-                                        href="http://127.0.0.1:8000/blog">
-                                        About Us
-                                    </a>
-                                </li>
-            
-                                <li>
-                                    <a class="flex space-x-2 items-center hover:text-yellow-500 text-sm text-gray-500"
-                                        href="http://127.0.0.1:8000/blog">
-                                        Contact Us
-                                    </a>
-                                </li>
-            
-                                <li>
-                                    <a class="flex space-x-2 items-center hover:text-yellow-500 text-sm text-gray-500"
-                                        href="http://127.0.0.1:8000/blog">
-                                        Terms
-                                    </a>
-                                </li>
-            
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="header-right" class="flex items-center md:space-x-6">
-                        <div class="flex space-x-5">
-                            <a class="flex space-x-2 items-center hover:text-yellow-500 text-sm text-gray-500"
-                                href="http://127.0.0.1:8000/login">
-                                Login
-                            </a>
-                            <a class="flex space-x-2 items-center hover:text-yellow-500 text-sm text-gray-500"
-                                href="http://127.0.0.1:8000/register">
-                                Register
-                            </a>
-                        </div>
-                    </div>
-                </header>
-            
-            
-                {{-- <div class="w-full text-center py-32">
-                    <h1 class="text-2xl md:text-3xl font-bold text-center lg:text-5xl text-gray-700">
-                        Welcome to <span class="text-yellow-500">&lt;YELO&gt;</span> <span class="text-gray-900"> News</span>
-                    </h1>
-                    <p class="text-gray-500 text-lg mt-1">Best Blog in the universe</p>
-                    <a class="px-3 py-2 text-lg text-white bg-gray-800 rounded mt-5 inline-block"
-                        href="http://127.0.0.1:8000/blog">Start
-                        Reading</a>
-                </div>
-             --}}
+       
                 <main class="container mx-auto px-5 flex flex-grow">
                     {{-- <div class="mb-10">
                         <div class="mb-16">
@@ -321,19 +240,8 @@
                     </div> --}}
                 </main>
             
-                <footer class="text-sm space-x-4 flex items-center border-t border-gray-100 flex-wrap justify-center py-4 ">
-                    <a class="text-gray-500 hover:text-yellow-500" href="">About Us</a>
-                    <a class="text-gray-500 hover:text-yellow-500" href="">Help</a>
-                    <a class="text-gray-500 hover:text-yellow-500" href="">Login</a>
-                    <a class="text-gray-500 hover:text-yellow-500" href="">Explore</a>
-                </footer>
-            {{-- </body> --}}
-
-            <!-- Page Content -->
-            {{-- <main>
-                {{ $slot }}
-            </main>
-        </div> --}}
+               
+           @include('layouts.parial.footer')
 
         @stack('modals')
 
