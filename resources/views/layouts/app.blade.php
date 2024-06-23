@@ -32,11 +32,11 @@
                     </div>
                 </header>
             @endif --}}
-            <body class="font-light antialiased">
+            {{-- <body class="font-light antialiased"> --}}
                 <header class="flex items-center justify-between py-3 px-6 border-b border-gray-100">
                     <div id="header-left" class="flex items-center">
                         <div class="text-gray-800 font-semibold">
-                            <span class="text-yellow-500 text-xl">&lt;YELO&gt;</span> Code
+                            <span class="text-yellow-500 text-xl">&lt;blog&gt;</span> Code
                         </div>
                         <div class="top-menu ml-10">
                             <ul class="flex space-x-4">
@@ -93,7 +93,7 @@
                 </header>
             
             
-                <div class="w-full text-center py-32">
+                {{-- <div class="w-full text-center py-32">
                     <h1 class="text-2xl md:text-3xl font-bold text-center lg:text-5xl text-gray-700">
                         Welcome to <span class="text-yellow-500">&lt;YELO&gt;</span> <span class="text-gray-900"> News</span>
                     </h1>
@@ -102,9 +102,9 @@
                         href="http://127.0.0.1:8000/blog">Start
                         Reading</a>
                 </div>
-            
+             --}}
                 <main class="container mx-auto px-5 flex flex-grow">
-                    <div class="mb-10">
+                    {{-- <div class="mb-10">
                         <div class="mb-16">
                             <h2 class="mt-16 mb-5 text-3xl text-yellow-500 font-bold">Featured Posts</h2>
                             <div class="w-full">
@@ -318,7 +318,7 @@
                         <a class="mt-10 block text-center text-lg text-yellow-500 font-semibold"
                             href="http://127.0.0.1:8000/blog">More
                             Posts</a>
-                    </div>
+                    </div> --}}
                 </main>
             
                 <footer class="text-sm space-x-4 flex items-center border-t border-gray-100 flex-wrap justify-center py-4 ">
@@ -327,7 +327,7 @@
                     <a class="text-gray-500 hover:text-yellow-500" href="">Login</a>
                     <a class="text-gray-500 hover:text-yellow-500" href="">Explore</a>
                 </footer>
-            </body>
+            {{-- </body> --}}
 
             <!-- Page Content -->
             {{-- <main>
